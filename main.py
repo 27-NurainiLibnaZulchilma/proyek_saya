@@ -29,3 +29,26 @@ def hitung_hasil_mbti(skor_akhir):
         hasil += "P"
         
     return hasil
+
+daftar_pertanyaan = [
+    {
+        "teks": "Apakah kamu merasa lebih berenergi setelah berkumpul dengan banyak orang?",
+        "jika_ya": "E",
+        "jika_tidak": "I"
+    },
+    {
+        "teks": "Apakah kamu lebih suka fokus pada fakta yang ada saat ini daripada berimajinasi tentang masa depan (masa yang akan datang)?",
+        "jika_ya": "S",
+        "jika_tidak": "N"
+    },
+    {
+        "teks": "Saat mengambil keputusan, apakah kamu lebih mengutamakan logika daripada perasaan orang lain?",
+        "jika_ya": "T",
+        "jika_tidak": "F"
+    },
+    {
+        "teks": "Apakah kamu lebih suka membuat rencana harian yang terjadwal dengan rapi?",
+        "jika_ya": "J",
+        "jika_tidak": "P"
+    }
+]
