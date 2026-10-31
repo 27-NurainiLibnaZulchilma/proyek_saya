@@ -52,3 +52,21 @@ daftar_pertanyaan = [
         "jika_tidak": "P"
     }
 ]
+
+print("--- Welcome to PersonaType App ---")
+print("Jawablah pertanyaan berupa kuis di bawah ini dengan mengetik 'Y' untuk YA dan 'T' untuk TIDAK.\n")
+
+for pertanyaan in daftar_pertanyaan:
+    print(pertanyaan["teks"])
+    jawaban = input("Jawaban kamu (Y/T): ").upper() 
+    
+    if jawaban == "Y":
+        huruf_jika = pertanyaan["jika_ya"]
+        skor[huruf_jika] += 1
+    elif jawaban == "T":
+        huruf_jika = pertanyaan["jika_tidak"]
+        skor[huruf_jika] += 1 
+    else:
+        print("Pilihan tidak valid!.")
+    
+    print("-" * 30)
