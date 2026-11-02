@@ -75,4 +75,4 @@ hasil_mbti = hitung_hasil_mbti(skor)
 
 print("\n========================================")
 print(f"Hasil tipe MBTI kamu adalah: {hasil_mbti}")
-print("========================================")
+print("==========================================")
