@@ -70,3 +70,9 @@ for pertanyaan in daftar_pertanyaan:
         print("Pilihan tidak valid!.")
     
     print("-" * 30)
+
+hasil_mbti = hitung_hasil_mbti(skor)
+
+print("\n========================================")
+print(f"Hasil tipe MBTI kamu adalah: {hasil_mbti}")
+print("========================================")
