@@ -31,26 +31,86 @@ def hitung_hasil_mbti(skor_akhir):
     return hasil
 
 daftar_pertanyaan = [
-    
-    {"teks": "1. Apakah kamu merasa lebih berenergi setelah berkumpul dengan banyak orang?", "jika_ya": "E", "jika_tidak": "I"},
-    {"teks": "2. Apakah kamu lebih suka menghabiskan waktu luang sendirian untuk mengisi energi?", "jika_ya": "I", "jika_tidak": "E"},
-    {"teks": "3. Dalam kerja kelompok, apakah kamu lebih suka langsung berbicara menyampaikan ide?", "jika_ya": "E", "jika_tidak": "I"},
-    {"teks": "4. Apakah kamu cenderung berpikir dalam hati terlebih dahulu sebelum mengutarakan pendapat?", "jika_ya": "I", "jika_tidak": "E"},
-    
-    {"teks": "5. Apakah kamu lebih suka fokus pada fakta yang ada saat ini daripada berimajinasi tentang masa depan (masa yang akan datang)?", "jika_ya": "S", "jika_tidak": "N"},
-    {"teks": "6. Apakah kamu sering mencari makna tersembunyi atau pola masa depan dari suatu kejadian?", "jika_ya": "N", "jika_tidak": "S"},
-    {"teks": "7. Apakah kamu lebih menyukai petunjuk kerja yang jelas dan pasti daripada yang bersifat umum?", "jika_ya": "S", "jika_tidak": "N"},
-    {"teks": "8. Apakah kamu lebih suka mencoba cara-cara baru yang kreatif daripada cara lama yang sudah biasa?", "jika_ya": "N", "jika_tidak": "S"},
- 
-    {"teks": "9. Saat mengambil keputusan, apakah kamu lebih mengutamakan logika daripada perasaan orang lain?", "jika_ya": "T", "jika_tidak": "F"},
-    {"teks": "10. Apakah kamu sering mempertimbangkan perasaan orang lain sebelum menolak permintaan mereka?", "jika_ya": "F", "jika_tidak": "T"},
-    {"teks": "11. Apakah kamu lebih menghargai keadilan yang objektif daripada keharmonisan suasana?", "jika_ya": "T", "jika_tidak": "F"},
-    {"teks": "12. Apakah kamu lebih mudah diyakinkan oleh argumen yang logis daripada cerita yang menyentuh hati?", "jika_ya": "T", "jika_tidak": "F"},
-    
-    {"teks": "13. Apakah kamu lebih suka membuat rencana harian yang terjadwal dengan rapi?", "jika_ya": "J", "jika_tidak": "P"},
-    {"teks": "14. Apakah kamu merasa lebih nyaman bertindak secara spontan (mendadak) sesuai situasi?", "jika_ya": "P", "jika_tidak": "J"},
-    {"teks": "15. Apakah kamu selalu berusaha menyelesaikan tugas sekolah jauh-jauh hari sebelum tenggat waktu?", "jika_ya": "J", "jika_tidak": "P"},
-    {"teks": "16. Apakah kamu merasa lebih termotivasi bekerja ketika mendekati batas waktu (deadline)?", "jika_ya": "P", "jika_tidak": "J"}
+    {
+        "teks": "1. Apakah kamu merasa lebih berenergi setelah berkumpul dengan banyak orang?",
+        "jika_ya": "E",
+        "jika_tidak": "I"
+    },
+    {
+        "teks": "2. Apakah kamu lebih suka menghabiskan waktu luang sendirian untuk mengisi energi?",
+        "jika_ya": "I",
+        "jika_tidak": "E"
+    },
+    {
+        "teks": "3. Dalam kerja kelompok, apakah kamu lebih suka langsung berbicara menyampaikan ide?",
+        "jika_ya": "E",
+        "jika_tidak": "I"
+    },
+    {
+        "teks": "4. Apakah kamu cenderung berpikir dalam hati terlebih dahulu sebelum mengutarakan pendapat?",
+        "jika_ya": "I",
+        "jika_tidak": "E"
+    },
+    {
+        "teks": "5. Apakah kamu lebih suka fokus pada fakta yang ada saat ini daripada berimajinasi tentang masa yang akan datang?",
+        "jika_ya": "S",
+        "jika_tidak": "N"
+    },
+    {
+        "teks": "6. Apakah kamu sering mencari makna tersembunyi atau pola dari masa yang akan datang dari suatu kejadian?",
+        "jika_ya": "N",
+        "jika_tidak": "S"
+    },
+    {
+        "teks": "7. Apakah kamu lebih nyaman belajar dengan contoh soal yang pasti daripada penjelasan teori yang masih mengawang-awang?",
+        "jika_ya": "S",
+        "jika_tidak": "N"
+    },
+    {
+        "teks": "8. Apakah kamu lebih suka mencoba cara-cara baru yang kreatif daripada cara lama yang sudah biasa?",
+        "jika_ya": "N",
+        "jika_tidak": "S"
+    },
+    {
+        "teks": "9. Saat mengambil keputusan, apakah kamu lebih mengutamakan logika daripada perasaan orang lain?",
+        "jika_ya": "T",
+        "jika_tidak": "F"
+    },
+    {
+        "teks": "10. Apakah kamu sering mempertimbangkan perasaan orang lain sebelum menolak permintaan mereka?",
+        "jika_ya": "F",
+        "jika_tidak": "T"
+    },
+    {
+        "teks": "11. Apakah kamu lebih mengutamakan bersikap adil dan jujur walaupun hal itu bisa memicu perdebatan?",
+        "jika_ya": "T",
+        "jika_tidak": "F"
+    },
+    {
+        "teks": "12. Apakah kamu lebih mudah diyakinkan oleh cerita yang menyentuh hati daripada argumen yang logis?",
+        "jika_ya": "F",
+        "jika_tidak": "T"
+    },
+    {
+        "teks": "13. Apakah kamu lebih suka membuat rencana harian yang terjadwal dengan rapi?",
+        "jika_ya": "J",
+        "jika_tidak": "P"
+    },
+    {
+        "teks": "14. Apakah kamu merasa lebih nyaman bertindak secara mendadak sesuai situasi?",
+        "jika_ya": "P",
+        "jika_tidak": "J"
+    },
+    {
+        "teks": "15. Apakah kamu selalu berusaha menyelesaikan tugas sekolah jauh-jauh hari sebelum tenggat waktu?",
+        "jika_ya": "J",
+        "jika_tidak": "P"
+    },
+    {
+        "teks": "16. Apakah kamu merasa lebih termotivasi bekerja ketika mendekati deadline?",
+        "jika_ya": "P",
+        "jika_tidak": "J"
+    },
 ]
 
 print("--- Welcome to PersonaType App ---")
